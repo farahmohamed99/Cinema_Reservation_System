@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8AB90623-1294-49AF-99FB-8AD1B0C44B18}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Online_Cinema_Reservation_System</RootNamespace>
+    <AssemblyName>Online Cinema Reservation System</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCinema.Designer.cs">
+      <DependentUpon>AddCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminHome.Designer.cs">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMovies.Designer.cs">
+      <DependentUpon>AdminMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminUsers.Designer.cs">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddMovie.Designer.cs">
+      <DependentUpon>Admin_AddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AddSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AddSeat.Designer.cs">
+      <DependentUpon>Admin_AddSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EditMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EditMovie.Designer.cs">
+      <DependentUpon>Admin_EditMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EditSeat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EditSeat.Designer.cs">
+      <DependentUpon>Admin_EditSeat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EditUser.Designer.cs">
+      <DependentUpon>Admin_EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_MovieDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_MovieDetails.Designer.cs">
+      <DependentUpon>Admin_MovieDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_NewUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_NewUser.Designer.cs">
+      <DependentUpon>Admin_NewUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Seats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Seats.Designer.cs">
+      <DependentUpon>Admin_Seats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_Seats_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_Seats_Details.Designer.cs">
+      <DependentUpon>Admin_Seats_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CinemaDetails.Designer.cs">
+      <DependentUpon>CinemaDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cinemas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cinemas.Designer.cs">
+      <DependentUpon>Cinemas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CinemaSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CinemaSeats.Designer.cs">
+      <DependentUpon>CinemaSeats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Details.Designer.cs">
+      <DependentUpon>Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCinema.Designer.cs">
+      <DependentUpon>EditCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditInfo.Designer.cs">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeatsList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeatsList.Designer.cs">
+      <DependentUpon>SeatsList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MovieList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MovieList.Designer.cs">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserDetails.Designer.cs">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserHome.Designer.cs">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserReservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserReservations.Designer.cs">
+      <DependentUpon>UserReservations.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddCinema.resx">
+      <DependentUpon>AddCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminHome.resx">
+      <DependentUpon>AdminHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminMovies.resx">
+      <DependentUpon>AdminMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminUsers.resx">
+      <DependentUpon>AdminUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddMovie.resx">
+      <DependentUpon>Admin_AddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AddSeat.resx">
+      <DependentUpon>Admin_AddSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_EditMovie.resx">
+      <DependentUpon>Admin_EditMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_EditSeat.resx">
+      <DependentUpon>Admin_EditSeat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_EditUser.resx">
+      <DependentUpon>Admin_EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MovieDetails.resx">
+      <DependentUpon>Admin_MovieDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_NewUser.resx">
+      <DependentUpon>Admin_NewUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Seats.resx">
+      <DependentUpon>Admin_Seats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_Seats_Details.resx">
+      <DependentUpon>Admin_Seats_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CinemaDetails.resx">
+      <DependentUpon>CinemaDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cinemas.resx">
+      <DependentUpon>Cinemas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CinemaSeats.resx">
+      <DependentUpon>CinemaSeats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCinema.resx">
+      <DependentUpon>EditCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditInfo.resx">
+      <DependentUpon>EditInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SeatsList.resx">
+      <DependentUpon>SeatsList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MovieList.resx">
+      <DependentUpon>MovieList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserDetails.resx">
+      <DependentUpon>UserDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserHome.resx">
+      <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserReservations.resx">
+      <DependentUpon>UserReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home BackGround.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-spotlight-background_1035-9217.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Movie1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
